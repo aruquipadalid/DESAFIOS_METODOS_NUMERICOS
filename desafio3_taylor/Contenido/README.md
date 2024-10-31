@@ -24,7 +24,7 @@ Para esta tarea se eligió la función exponencial para realizar la aproximació
 ## ✋ Aproximación manual
 
 <a href='./index.xlsx'>
-    <img src='./assets/capture_one.png'/>
+    <img src='./activo/capture_one.png'/>
 </a>
 
 [<kbd> <br> 👆 HACER CLICK PARA VER <br> </kbd>](./index.xlsx)
