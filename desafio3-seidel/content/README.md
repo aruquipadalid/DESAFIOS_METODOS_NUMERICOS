@@ -1,34 +1,47 @@
-import numpy as np
+<h1 align='center'>📒 Tarea</h1>
 
+<p align='center'>
+    <a href='../README.md'>
+        <img alt='Markdown' src='https://img.shields.io/badge/Nota de clase-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white'/>
+    </a>
+    <a href='./index.xlsx'>
+        <img alt='Excel' src='https://img.shields.io/badge/Documento Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white'/>
+    </a>
+    <a href='./index.py'>
+        <img alt='Python' src='https://img.shields.io/badge/Código python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54'/>
+    </a>
+</p>
 
-def clean_diagonal(A, B):
-    n = len(A)
-    M = np.zeros((n, n))
-    C = np.zeros(n)
-    for i in range(n):
-        C[i] = B[i] / A[i][i]
-        for j in range(n):
-            if i != j:
-                M[i][j] = -A[i][j] / A[i][i]
-    return M, C
+Utilizando el sistema de la [tarea anterior](../../clase7/content/README.md),
+se resuelve el sistema de ecuaciones lineales utilizando
+el método _Gauss-Seidel_.
 
-def gauss_seidel(A, B, tolerance, max_iter=100000):
-    x = np.zeros(len(B))
-    M, C = clean_diagonal(A, B)
-    for _ in range(max_iter):
-        x_new = x.copy()
-        for i in range(len(x_new)):
-            x_new[i] = np.dot(M[i], x_new) + C[i]
-        errors = np.abs(x_new - x)
-        max_error = np.max(errors)
-        x = x_new
-        if max_error < tolerance:
-            break
-    return x
+$$
+A = \begin{bmatrix}
+    52 & 20 & 25 \\
+    30 & 50 & 20 \\
+    18 & 30 & 52
+\end{bmatrix}
 
-A = [[52, 20, 25], [30, 50, 20], [18, 30, 52]]  # Matriz de coeficientes
-B = [4800, 5810, 5690]  # Vector de términos independientes
+\quad
 
-tolerance = 1e-10  # Tolerancia de error para la solución
+B = \begin{bmatrix}
+    4800 \\
+    5810 \\
+    5690
+\end{bmatrix}
+$$
 
-print(gauss_seidel(A, B, tolerance))
+### Resultado en Excel
+
+<p align="center">
+    <img src="./assets/capture_1.png" width="800">
+</p>
+
+En la imagen, la solución va convergiendo a medida que se aumenta el número de iteraciones.
+
+### Resultado en Python
+
+<p align='center'>
+    <img src='./assets/capture_2.png' width='800'>
+</p>
