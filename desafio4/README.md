@@ -17,7 +17,7 @@ $$
 
 ### 🎯 Ejemplo
 
-![image](./assets/capture_one.png)
+![image](./activo/capture_one.png)
 
 $$
 H = A \cdot e \cdot \sigma \cdot T^4
