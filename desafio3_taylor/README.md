@@ -1,4 +1,4 @@
-Aproximación de Taylor
+Desafio 3 Aproximación de Taylor
 Introducción a Brook Taylor
 Brook Taylor fue un matemático inglés conocido por sus contribuciones significativas al cálculo diferencial e integral. Su mayor legado es la serie de Taylor, una herramienta poderosa para aproximar valores de una función compleja utilizando valores cercanos de la función y sus derivadas en otro punto.
 
