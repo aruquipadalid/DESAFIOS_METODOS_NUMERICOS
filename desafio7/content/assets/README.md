@@ -12,7 +12,7 @@
     </a>
 </p>
 
-![image](./assets/capture_1.png)
+![alt text](./assets/capture_1.png)
 
 Dando como resultado final lo siguiente:
 
@@ -36,4 +36,4 @@ X = np.dot(A_inv, B)
 print(X)
 ```
 
-![image](./assets/capture_2.png)
+![alt text](./assets/capture_2.png)
