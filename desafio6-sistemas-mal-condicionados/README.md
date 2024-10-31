@@ -54,3 +54,15 @@ Para ejecutar el archivo en Octave:
 ```octave
 sistemas_mal_condicionados
 
+
+
+### Paso 5: Hacer `commit` y `push` a GitHub
+
+Guarda y sube todos los cambios:
+
+```bash
+git add README.md sistemas_mal_condicionados.m
+git commit -m "Agregar sistema mal condicionado y matriz de Hilbert en un solo archivo"
+git push origin main
+
+
