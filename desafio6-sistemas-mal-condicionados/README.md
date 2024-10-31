@@ -36,3 +36,21 @@ disp(cond(a1)); % Resultado: 2.4580
 a1 = [10 1.98 -1; -3 -6 2; 1 1 5];
 x = inv(a1) * b1;
 disp(x); % Resultado: [0.5177, 7.9906, -6.0017]
+
+# Sistemas Mal Condicionados en Álgebra Lineal
+
+Este repositorio contiene un ejemplo de sistemas de ecuaciones mal condicionados, incluyendo el uso de matrices de Hilbert en Octave.
+
+## Contenido
+
+- **sistemas_mal_condicionados.m**: Este archivo Octave incluye:
+  - Un sistema mal condicionado de 2x2, con su número de condición y su gráfica.
+  - Una matriz de Hilbert de dimensión 3x3, con su número de condición.
+
+## Instrucciones
+
+Para ejecutar el archivo en Octave:
+
+```octave
+sistemas_mal_condicionados
+
