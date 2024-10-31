@@ -1,6 +1,6 @@
 # SISTEMAS MAL CONDICIONADOS
 
-Un sistema mal condicionado es aquel en el que pequeñas variaciones en los datos de entrada pueden causar grandes cambios en los resultados. Esto puede hacer que los resultados sean poco fiables. A continuación se describen algunos métodos para detectar si un sistema está mal condicionado:
+Un sistema mal condicionado es aquel en el que pequeñas variaciones en los datos de entrada pueden causar grandes cambios en los resultados. Esto puede hacer que los resultados sean poco fiables. Aquí te dejo algunos métodos para detectar si un sistema está mal condicionado:
 
 ## Métodos para Detectar Sistemas Mal Condicionados
 
@@ -18,7 +18,7 @@ Un sistema mal condicionado es aquel en el que pequeñas variaciones en los dato
    Utiliza normas para medir la magnitud de los vectores y matrices. Las normas más comunes son la norma 1, la norma infinito y la norma euclidiana.
 
 4. **Análisis Gráfico**:
-   Representa gráficamente las ecuaciones del sistema. Si las líneas o planos están casi paralelos, el sistema puede estar mal condicionado.
+   En algunos casos, puedes representar gráficamente las ecuaciones del sistema. Si las líneas o planos están casi paralelos, el sistema puede estar mal condicionado.
 
 Estos métodos te ayudarán a identificar y manejar sistemas mal condicionados. Si necesitas más detalles, te recomiendo revisar recursos adicionales como videos educativos y artículos especializados.
 
@@ -36,4 +36,3 @@ disp(cond(a1)); % Resultado: 2.4580
 a1 = [10 1.98 -1; -3 -6 2; 1 1 5];
 x = inv(a1) * b1;
 disp(x); % Resultado: [0.5177, 7.9906, -6.0017]
-
