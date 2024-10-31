@@ -1,4 +1,4 @@
-# Clase 4 - Aproximación de Taylor
+# Clase 3 Aproximación de Taylor
 
 ### Introducción a Brook Taylor
 
